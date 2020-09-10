@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Завдання 2</title>
+        <script Language="JavaScript">
+            var st='';
+            function fun(value){
+                st+=value;
+                kalk.vuvid.value = " "+st;
+            }
+            function fun_roz(){
+                a=0.0;
+                a=eval(st);
+                kalk.vuvid.value = st+"="+a;
+                st=a;
+            }
+            function fun_c(){
+                st='';
+                kalk.vuvid.value = " ";
+            }
+        </script>    
+    </head>
+    <body>
+        <img src="../flovers.jpg" class="photo">
+        <div class="verh" id="div2">
+            <form name="kalk">
+                <table class="t1">
+                    <tr><td colspan="4"><input type="text" id="vuvid" value=""></td></tr>
+                    <tr><td colspan="2"><input type="button" onClick = "fun_c(value);" id="C" value="C" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_pod2" value="%" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_pod" value="/" ></td></tr>
+                    <tr><td><input type="button" class="th" onClick = "fun(value);" id="zn_7" value="7" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_8" value="8" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_9" value="9" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_pom" value="*" ></td></tr>
+                    <tr><td><input type="button" class="th" onClick = "fun(value);" id="zn_4" value="4" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_5" value="5" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_6" value="6" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_vid" value="-" ></td></tr> 
+                    <tr><td><input type="button" class="th" onClick = "fun(value);" id="zn_1" value="1" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_2" value="2" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_3" value="3" ></td>
+                        <td><input type="button" class="th" onClick = "fun(value);" id="zn_dod" value="+" ></td></tr>
+                    <tr><td><input type="button" class="th" onClick = "fun(value);" id="zn_0" value="0" ></td>
+                        <td colspan="3"><input type="button" onClick = "fun_roz();" id="zn_dor" value="=" ></td></tr>            
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

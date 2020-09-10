@@ -1,0 +1,42 @@
+<html>
+        <head>
+            <meta char-set=utf8></meta>
+            <link rel="stylesheet" href="style.css" type="text/css">
+            <title>Завдання 1</title>
+            <script Language="JavaScript">
+                var timeStr, dateStr;
+                function clock() {
+                    now= new Date();
+                    hours= now.getHours();
+                    minutes= now.getMinutes();
+                    seconds= now.getSeconds();
+                    date= now.getDate();
+                    month= now.getMonth()+1;
+                    year= now.getFullYear();
+                    timeStr= ((hours < 10) ? "0" : "") + hours;
+                    timeStr+= ((minutes < 10) ? ":0" : ":") + minutes;
+                    timeStr+= ((seconds < 10) ? ":0" : ":") + seconds;
+                    timeStr+= " - " + year;
+                    timeStr+=((month < 10) ? ":0" : ":") + month;
+                    timeStr+=((date < 10) ? ":0" : ":") + date; 
+                   
+                    document.clock.time.value = timeStr;
+
+                    Timer= setTimeout("clock()",1000);
+                }
+            </script>
+        </head>
+    <body onLoad="clock()">
+        <img src="../flovers.jpg" class="photo">
+        <div class="verh" id="div1">
+            <form name="clock">
+                Поточна година та дата: <br>
+                <input type="text" name="time"  value=""><br>
+            </form>
+        </div>
+        <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+        </div>
+    </body>
+</html>
