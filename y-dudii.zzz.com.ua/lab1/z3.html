@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>3 завдання</title>
+        <script>
+            function fun(a){
+            main_form.t_res.value = a;
+            }
+        </script>
+    </head>
+    <body onLoad = "fun('&uarr;&nbsp;&uarr;&nbsp;&uarr;&nbsp;Об&prime;єкт сфокусований&nbsp;&#9786;');">
+        <img src="flovers.jpg" class="photo">
+        <div class="z3">
+            <form id = "main_form" >
+                <input type = "text" autofocus value="Напишіть щось тут і натисніть Enter =) Aбо клацніть деінде))) " 
+                    onBlur = "fun('&uarr;&nbsp;&uarr;&nbsp;&uarr;&nbsp;Фокус втрачено&nbsp;&#9785;');" 
+                    onClick = "fun('&uarr;&nbsp;&uarr;&nbsp;&uarr;&nbsp;Фокус відновлено&nbsp;&#9786;');"
+                    onChange = "fun('&uarr;&nbsp;&uarr;&nbsp;&uarr;&nbsp;Текст змінено&nbsp;&#9786;');">
+                <br>
+                <br>
+                <hr id="h1">
+                <br>
+                <input type = "text" id = "t_res" ><br>
+            </form>
+        </div>
+        <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+    </body>
+</html>

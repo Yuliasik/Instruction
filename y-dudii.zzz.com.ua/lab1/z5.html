@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>5 завдання</title>
+        <script>
+            function fun(){
+                var x, y, sum=0.0,a=0.0,fact=1, start=3, end=6;
+                x = parseInt(main_form.t_x.value);
+                y = parseInt(main_form.t_y.value);
+                while(start<=end){
+                    fact=1;
+                    for (var index = 1; index <= start; index++) {
+                        fact=fact*index;
+                    }
+                    a=Math.pow(-1,start+1)*(x-y)/fact;
+                    sum=sum+a;
+                    start++;
+                }
+                main_form.t_rez.value = "" + sum;
+            }
+        </script>
+    </head>
+    <body>
+        <img src="flovers.jpg" class="photo">
+        <div id="z5">
+            <img src="m2.png" style="width: 360px;">
+            <hr size="20px" style="border: none;">
+            <form id = "main_form">
+                &nbsp; x = <input type="text" id = "t_x" value="3"><br>
+                &nbsp; y = <input type="text" id = "t_y" value="2"><br>
+                &nbsp;Сума = <input type="text" id = "t_rez" value=""><br>
+                <input type = "button" id="b_5" onClick = "fun();" value = "Розрахувати">
+            </form>
+         </div>
+         <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+    </body>
+</html>

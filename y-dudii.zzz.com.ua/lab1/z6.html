@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Завдання 6</title>
+        <SCRIPT LANGUAGE='JavaScript'> 
+            var contenent = new Array(6); 
+            contenent [0] = "Євразія";
+            contenent [1] = "Африка" ;
+            contenent [2] = "Південна Америка";
+            contenent [3] = "Північна Америка";
+            contenent [4] = "Антрактида";
+            contenent [5] = "Австралія";
+            var hustota = [86, 30.5, 21.4, 22.9, 0.00018,3.1];
+            var plosha = [54759000,30132000,17820000,24709000,14000000,7688287];
+
+            function fun_poshyk(){
+                var mater = main_form_6.materik.value;
+                var a=120.0;
+                for(var i=0; i<contenent.length; i++){
+                    if(contenent[i]==mater){
+                        a=i;
+                       break;
+                    }
+                }
+                return a;
+            }
+            function fun_h_p(){
+                var a1=fun_poshyk();
+                main_form_6.v_hust.value = "Густота населення : " + hustota[a1]+" особи/км² ";
+                main_form_6.v_pl.value = "Загальна площа : " + plosha[a1] + " км²";
+            }
+            function fun_n(){
+                var a2=fun_poshyk();
+                main_form_6.v_nas.value = "Загальна кількість населення : " + hustota[a2]*plosha[a2]+" людей";
+            }
+            function fun(a){
+                main_form_6.v_hust.value = a;
+                main_form_6.v_pl.value = a;
+                main_form_6.v_nas.value = a;
+            }
+        </SCRIPT>    
+    </head>
+    <body>
+        <img src="flovers.jpg" class="photo">
+        <div id="z6">
+            <img src="planeta.png" id="pl" style="width: 360px;">
+            <hr size="20px" style="border: none;">
+            <form id = "main_form_6">
+               Введіть назву континенту <input type = "text"  id="materik" autofocus onChange = "fun(' ');"  value=""><br>
+                <input type = "button" id="b6_hust" onClick = "fun_h_p();" value = "Густота і площа">
+                <input type = "button" id="b6_nas" onClick = "fun_n();" value = "Населення"> <br>
+                <input type = "text" id="v_hust" value=""><br>
+                <input type = "text" id="v_pl" value=""><br>
+                <input type = "text" id="v_nas" value=""><br>
+            </form>
+        </div>
+        <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+    </body>
+</html>
