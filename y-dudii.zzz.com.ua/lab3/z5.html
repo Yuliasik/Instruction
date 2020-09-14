@@ -13,6 +13,7 @@
             var class_visible = 'verh';
             var class_hide = 'hidden';
             function f_start(){
+                vidp_k.readOnly = false;
                 rezult1.hidden=true;
                 rezult2.hidden=true;
                 b_next.hidden=false;
@@ -29,6 +30,7 @@
                 }
             }
             function rozrah(){
+                vidp_k.readOnly = true;
                 c=a*b;
                 if (c==vidp_k.value){
                     k_d++;
