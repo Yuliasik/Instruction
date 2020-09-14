@@ -1,0 +1,248 @@
+.perel{
+    font-size: 25px; 
+    font-style: italic;
+    margin-top: 40;
+    margin-left: 5%; 
+    
+}
+body{
+    height: 100%;
+    background-image: url(../flovers1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: left;
+}
+li{
+    margin-top: 10px;
+    font-weight:bold;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color:black;
+}
+.d1 {
+    font-size: 25px; 
+    font-style: italic;
+    position: absolute;
+    z-index: 10;
+    font-weight:bold;
+    top: 90%;
+    right: 5%;
+}
+.d1 a{
+    text-decoration: none;
+}
+.verh{
+    margin: auto;
+    background: rgba(238, 216, 191, 0.6); 
+}
+#div1{
+    margin-top: 260px;
+    width: 490px;
+    height: 160px;
+    padding: 60px;
+    /* font-size: 1px; */
+}
+.param{
+    font-size: 22px;
+    border: none;
+    background:  rgba(238, 216, 191, 0.6) ;
+    margin-left: 5px;
+    width: 200px;
+    font-style: italic;
+}
+td{
+    font-size: 25px;
+    font-style: italic;
+}
+.tex{
+    font-size: 23px;
+}
+.v1{
+    padding-top: 15px;
+}
+#div2{
+    width: 707px;
+    margin: auto;
+    margin-top: 280px;
+    height: 260px;
+    padding-top: 35px;
+}
+#tabl {
+    margin: auto ;
+}
+#vuvid{
+    width: 617px;
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+    background: none;
+    margin-bottom:5px ;
+    box-shadow: inset 0 0 5px black, inset 0 0 10px rgba(58, 58, 58, 0.513);
+    border: rgba(0, 0, 0, 0.507);
+}
+.zv, .siri{
+    width: 40px;
+    height: 40px;
+    background: none;
+    font-weight: bolder;
+}
+
+#clear, #enter, #C_A{
+    width: 83px;
+}
+#z37{
+    width: 100%;
+    height: 40px;
+}
+.pictures{
+    width: 80px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px ;
+    margin-top: 20px;
+}
+#div3{
+    margin-top: 50px;
+    width: 1205px;
+}
+#photo{
+    height: 600px;
+    /* margin-left: 60px; */
+    padding-top: 40px;
+}
+#st_vl, #st_vp{
+    font-size: 55px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.photo_frame{
+    text-align: center;
+}
+#div5, #div5_1{
+    margin-top: 300px;
+    width: 500px;
+    height: 250px;
+    padding: 1px 20px 20px 20px;
+}
+#rezult1 {
+    font-size: 28px;
+    text-align: center;
+}
+#rezult2{
+    font-size: 23px;
+    text-align: center;
+}
+#pruklad{
+    text-align: right;
+    font-size: 25px;
+    font-style: italic;
+}
+#vidp_k{
+    margin-top: 0px;
+    width: 50px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    background:  rgba(238, 216, 191, 0.6) ;
+    text-align: center;
+}
+#vidp{
+    font-size: 18px;
+    text-align: center;
+}
+#kl{
+    width: 250px;
+}
+#kl2{
+    height: 30px;
+}
+#kl1{
+    height: 50px;
+} 
+#kl3{
+    height: 60px;
+}
+#kl4{
+    height: 25px;
+}
+#kl5{
+    height: 55px;
+    text-align: center;
+}
+#b_next, #b_rez{
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    background:  rgba(238, 216, 191, 0.6) ;
+    border-radius: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+.r{
+    width: 500px;
+}
+.hidden{
+    display: none;
+}
+#rozp_t{
+    height: 80px;
+    width: 250px;
+    background:  rgba(238, 216, 191, 0.6) ;
+    border-radius: 15px;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 100px;
+    margin-left: 120px;
+   
+}
+.pozn{
+    border: 3px solid rgb(14, 36, 8);
+    padding: 5px;
+}
+#div6{
+    height: 100%;
+    overflow-x: auto;
+    width: 600px;
+}
+h3{
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+}
+#r_o, #v_o, #l_o,#t_o, #if_o, #z_o, #ch_o{
+    font-size: 26px;
+    font-style: italic;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.z{
+    font-size: 22px;
+    margin-left: 120px;
+    line-height: 10px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+.z::before {
+    content: " ⚜ ";
+}
+.pic{
+    margin-top: 15px;
+    width: 330px;
+    border: 1.5px solid rgb(14, 36, 8);
+    padding: 3px;
+}
+.opus{
+    line-height: 23px;
+    font-size: 17px;
+    margin-right: 100px;
+    text-align: center;
+}

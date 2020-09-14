@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Завдання 1</title>
+        <script>
+           function fun(){
+               var per1=0.0, pl1=0.0, dia1=0.0;
+                var a=parseInt(dovj1.value);
+                var b=parseInt(shur.value);
+                if(a==0){
+                    per.innerHTML='введіть довжину';
+                    pl.innerHTML='введіть довжину';
+                    dia.innerHTML='введіть довжину';
+                } else
+                    if(b==0){
+                        per.innerHTML='введіть ширину';
+                        pl.innerHTML='введіть ширину';
+                        dia.innerHTML='введіть ширину';
+                    } else {
+                        per1=(a+b)*2;
+                        pl1=a*b;
+                        dia1=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+                        per.innerHTML=per1;
+                        pl.innerHTML=pl1;
+                        dia.innerHTML=dia1;
+                    }
+           }
+        </script>
+    </head>
+    <body>
+        <!-- <img src="../flovers.jpg" class="photo"> -->
+        <div class="verh" id="div1">
+            <form>
+                <table>
+                    <tr><td class="tex">Довжина прямокутника : </td>
+                        <td><input type="text" class="param" onChange = "fun()" id="dovj1" value="0"></td></tr>
+                    <tr><td class="tex">Ширина прямокутника : </td>
+                        <td><input type="text" class="param" onChange = "fun()" id="shur" value="0"></td></tr>
+                    <tr><td class="v1">Периметри : </td>
+                        <td class="v1" id="per"></td></tr>
+                     <tr><td>Площа : </td>
+                        <td id="pl"></td></tr>
+                    <tr><td>Довжина діагоналі : </td>
+                        <td id="dia"></td></tr>            
+                </table>
+            </form>
+        </div>
+        <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+    </body>
+</html>

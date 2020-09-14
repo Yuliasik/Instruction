@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Завдання 5</title>
+        <script>
+            var c=0;
+            var k=0;
+            var k_d=0;
+            var a=0;
+            var b=0;
+            var kk=0;
+            var class_visible = 'verh';
+            var class_hide = 'hidden';
+            function f_start(){
+                rezult1.hidden=true;
+                rezult2.hidden=true;
+                b_next.hidden=false;
+                vidp.innerHTML="";
+                vidp_k.value="";
+                if(k<=9){
+                    a=Math.floor(Math.random() * 9) + 1;
+                    b=Math.floor(Math.random() * 9) + 1;
+                    k++;
+                    pruklad.innerHTML=" "+k+") "+a+" × "+b+" = ";
+                }
+                if(k==10){
+                    b_next.hidden=true;
+                }
+            }
+            function rozrah(){
+                c=a*b;
+                if (c==vidp_k.value){
+                    k_d++;
+                    vidp.innerHTML="Відповідь вірна";
+                }else{
+                    vidp.innerHTML="Помилка, правильна відповідь «"+c+"»";
+                }
+            }
+            function perev(){
+                rezult1.hidden=false;
+                rezult2.hidden=false;
+                kk++;
+                if(kk==2){
+                    div5_1.setAttribute('class', class_visible);
+                    div5.setAttribute('class', class_hide);
+                }
+                b_next.hidden=true;
+                rezult1.innerHTML= "Загальний рахунок "+k_d*10+"%";
+                rezult2.innerHTML= "("+k_d+" правильних відповідей з 10)"; 
+                b_rez.value = "Розпочати заново";
+            }
+            function start_test(){
+                div5.setAttribute('class', class_visible);
+                div5_1.setAttribute('class', class_hide);
+                kk=0;
+                k=0;
+                b_rez.value = "Перевірити";
+                f_start();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="hidden" id="div5">
+            <table>
+                <tr><td id="kl1" class="r" colspan="2"><p id="rezult1"></p></td></tr>
+                <tr><td id="kl2" class="r" colspan="2"><p id="rezult2"></p></td></tr>
+                <tr id="kl3"><td id="kl"><p id="pruklad"></p></td>                        <td><input type="text" autofocus id="vidp_k" onChange="rozrah()" value=""></td></tr>
+                <tr><td id="kl4" class="r" colspan="2"><p id="vidp"></p></td></tr>
+                <tr id="kl5"><td><input type="button" id="b_next" onclick="f_start()" value="Наступне завдання"></td>
+                <td><input type="button" id="b_rez" onclick="perev()" value="Перевірити"></td></tr>
+            </table>        
+        </div>
+        <div id="div5_1" class="verh">
+            <input type="button" id="rozp_t" value="Розпочати тест" onclick="start_test()">
+        </div>
+        <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+    </body>
+</html>

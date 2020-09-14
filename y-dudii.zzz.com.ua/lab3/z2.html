@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Завдання 2-3</title>
+        <script>
+            var a=['а','б','в','г','ґ','д','е','є','ж','з','и','і','ї','й','к','л','м','н','о','п','р','с','т','у','ф','х','ц','ч','ш','щ','ь','ю','я',',','.','?',' '];
+            var b=['f','<','d','u',';','l','t','\"','\'','p','b','s',')','q','r','k','v','y','j','g','h','c','n','e','a','(','w','x','i','o','m','>','z',',','.','!',' '];
+            var a_mova = false;
+            var text = '';
+            function fun(id1){                
+                var x = parseInt(id1.replace(/[^\d]/g, ''));
+                if(a_mova==false){
+                    text = text + a[x-1];
+                }
+                if(a_mova==true){
+                    text = text + b[x-1];
+                }
+                forma.vuvid.value = text; 
+            }
+            function f_c (){
+                text = ' ';
+                forma.vuvid.value = text; 
+            }
+            function zm_m(){
+                if(a_mova == false){
+                    a_mova=true;
+                    forma.z1.value='f';
+                    forma.z2.value='<';
+                    forma.z3.value='d';
+                    forma.z4.value='u';
+                    forma.z5.value=';';
+                    forma.z6.value='l';
+                    forma.z7.value='t';
+                    forma.z8.value='\"';
+                    forma.z9.value='\'';
+                    forma.z10.value='p';
+                    forma.z11.value='b';
+                    forma.z12.value='s';
+                    forma.z13.value=')';
+                    forma.z14.value='q';
+                    forma.z15.value='r';
+                    forma.z16.value='k';
+                    forma.z17.value='v';
+                    forma.z18.value='y';
+                    forma.z19.value='j';
+                    forma.z20.value='g';
+                    forma.z21.value='h';
+                    forma.z22.value='c';
+                    forma.z23.value='n';
+                    forma.z24.value='e';
+                    forma.z25.value='a';
+                    forma.z26.value='(';
+                    forma.z27.value='w';
+                    forma.z28.value='x';
+                    forma.z29.value='i';
+                    forma.z30.value='o';
+                    forma.z31.value='m';
+                    forma.z32.value='>';
+                    forma.z33.value='z';
+                    forma.z34.value=',';
+                    forma.z35.value='.';
+                    forma.z36.value='!';
+                    forma.z37.value=' ';
+                } else if(a_mova == true) {
+                    a_mova=false;
+                    forma.z1.value='а';
+                    forma.z2.value='б';
+                    forma.z3.value='в';
+                    forma.z4.value='г';
+                    forma.z5.value='ґ';
+                    forma.z6.value='д';
+                    forma.z7.value='е';
+                    forma.z8.value='є';
+                    forma.z9.value='ж';
+                    forma.z10.value='з';
+                    forma.z11.value='и';
+                    forma.z12.value='і';
+                    forma.z13.value='ї';
+                    forma.z14.value='й';
+                    forma.z15.value='к';
+                    forma.z16.value='л';
+                    forma.z17.value='м';
+                    forma.z18.value='н';
+                    forma.z19.value='о';
+                    forma.z20.value='п';
+                    forma.z21.value='р';
+                    forma.z22.value='с';
+                    forma.z23.value='т';
+                    forma.z24.value='у';
+                    forma.z25.value='ф';
+                    forma.z26.value='х';
+                    forma.z27.value='ц';
+                    forma.z28.value='ч';
+                    forma.z29.value='ш';
+                    forma.z30.value='щ';
+                    forma.z31.value='ь';
+                    forma.z32.value='ю';
+                    forma.z33.value='я';
+                    forma.z34.value=',';
+                    forma.z35.value='.';
+                    forma.z36.value='?';
+                    forma.z37.value=' ';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="verh" id="div2">
+            <form id="forma">
+                <table id="tabl">
+                    <tr><td colspan="14"><input type="text" id="vuvid" value="" readonly></td></tr>
+                    <tr><td><input type="button" class="zv" onClick = "fun(id)" id="z14" value="й"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z27" value="ц"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z24" value="у"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z15" value="к"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z7" value="е"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z18" value="н"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z4" value="г"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z29" value="ш"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z30" value="щ"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z10" value="з"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z26" value="х"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z13" value="ї"></td>
+                        <td colspan="2"><input type="button" class="zv" onClick = "f_c()" id="clear" value="clear"></td></tr>
+                    <tr><td><input type="button" class="zv" onClick = "fun(id)" id="z25" value="ф"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z12" value="і"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z3" value="в"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z1" value="а"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z20" value="п"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z21" value="р"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z19" value="о"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z16" value="л"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z6" value="д"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z9" value="ж"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z8" value="є"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z5" value="ґ"></td>
+                        <td colspan="2"><input type="button" class="zv" id="enter" value="Enter"></td></tr>
+                    <tr><td><input type="button" class="zv" onClick = "fun(id)" id="z33" value="я"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z28" value="ч"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z22" value="с"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z17" value="м"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z11" value="и"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z23" value="т"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z31" value="ь"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z2" value="б"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z32" value="ю"></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z34" value=","></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z35" value="."></td>
+                        <td><input type="button" class="zv" onClick = "fun(id)" id="z36" value="?"></td>
+                        <td colspan="2"><input type="button" class="zv" onClick="zm_m()" id="C_A" value="Alt+Shift"></td></tr>
+                    <tr><td><input type="button" class="siri" value="&12"></td>
+                        <td><input type="button" class="siri" value="Ctrl"></td>
+                        <td><input type="button" class="siri" value="&#9786;"></td>
+                        <td colspan="8"><input type="button" class="zv" onClick = "fun(id)" id="z37" value=" "></td>
+                        <td><input type="button" class="siri" value="&#9668;"></td>
+                        <td><input type="button" class="siri" value="&#9650;"></td>
+                        <td><input type="button" class="siri" value="&#9658;"></td>
+
+
+
+
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="d1">
+            <a href="index.html">Назад</a>
+        </div>
+    </body>
+</html>   
