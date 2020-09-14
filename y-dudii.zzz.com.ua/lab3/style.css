@@ -246,3 +246,14 @@ h3{
     margin-right: 100px;
     text-align: center;
 }
+::-webkit-scrollbar{
+	width: 5px;
+    padding-right: 3px;
+}
+::-webkit-scrollbar-track{
+	border: 2px #694e03;
+}
+::-webkit-scrollbar-thumb{
+	background: #694e03;
+	border-radius: 100px;
+}
