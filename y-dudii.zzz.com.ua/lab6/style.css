@@ -1,0 +1,157 @@
+@font-face{
+    font-family: Nexa Script Light;
+    src:url(../fonts/19442.ttf);
+}
+body{
+    height: 100%;
+    background-image: url(../flovers1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.perel{
+    font-size: 25px; 
+    font-style: italic;
+    margin-top: 40;
+    margin-left: 5%; 
+}
+h2{
+    text-align: left;
+}
+li{
+    margin-top: 10px;
+    font-weight:bold;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color:black;
+}
+.d1{
+    font-size: 25px; 
+    font-style: italic;
+    position: absolute;
+    z-index: 10;
+    font-weight:bold;
+    top: 90%;
+    right: 5%;
+}
+.d1 a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+	width: 5px;
+    padding-right: 3px;
+}
+::-webkit-scrollbar-track{
+	border: 2px #694e03;
+}
+::-webkit-scrollbar-thumb{
+	background: #694e03;
+	border-radius: 100px;
+}
+.verh{
+    margin: auto;
+    background: rgba(238, 216, 191, 0.6); 
+}
+#div1{
+    width: 1100px;
+    height: 750px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Nexa Script Light;
+    margin-top: 60px;
+    padding-bottom: 0px;
+    padding-top: 1px;
+}
+#windowForSelect{
+    margin-left: 50px;
+    height: 65%;
+    width: 25%;
+    border: 3px solid rgba(66, 27, 15, 0.828);
+    outline: 8px solid rgba(66, 27, 15, 0.5);
+    float: left;
+    clear: both;
+    overflow-x: hidden;
+}
+option{
+    width: 271px;
+    height: 56px;
+    font-family: Nexa Script Light;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 25px;
+}
+.vudil{
+    background: rgba(66, 27, 15, 0.219);
+}
+select{
+    background: none;
+    border: none;
+}
+#windowForPict{
+    margin-right: 50px;
+    width: calc(75%-1644px);
+    height: 65%;
+    margin-left: 444px;
+    border: 3px solid rgba(66, 27, 15, 0.828);
+    outline: 8px solid rgba(66, 27, 15, 0.5);
+}
+.poloska{
+    height: 32px;
+    width: 1015px;
+    background: rgba(139, 72, 51, 0.349);
+    border: none;
+    margin-right: 42px;
+    margin-left: 42px;
+}
+#p1{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+#p2{
+    margin-top: 30px;
+    width: 866px;
+}
+#p3{
+    width: 150px;
+    float: right;
+    margin-top: -32px;
+}
+#button{
+    width: 150px;
+    height: 32px;
+    font-family: Nexa Script Light;
+    /* font-weight: bold; */
+    font-size: 18px;
+    text-align: center;
+    background: none;
+}
+.pidpus{
+    margin-top: 20px;
+    height: 50px;
+    /* background-color: red; */
+    /* border:2px solid royalblue; */
+    margin-bottom: 0px;
+}
+#div_photo{
+    height: 330px;
+    width: 560px;
+    /* border:2px solid red; */
+    margin-left: 17px;
+    /* margin-top: -30px; */
+}
+.photo{
+    width: 560px;
+    margin-top: 10px;
+    border: 1.5px solid rgb(68, 12, 12);
+    padding: 2px;
+}
+.country{
+    font-size: 27px ;
+    float: right;
+    margin-right: 25px;
+}

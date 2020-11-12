@@ -1,0 +1,145 @@
+@font-face{
+    font-family: Nexa Script Light;
+    src:url(../fonts/19442.ttf);
+}
+body{
+    height: 100%;
+    background-image: url(../flovers1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.perel{
+    font-size: 25px; 
+    font-style: italic;
+    margin-top: 40;
+    margin-left: 5%; 
+}
+h2{
+    text-align: left;
+}
+li{
+    margin-top: 10px;
+    font-weight:bold;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color:black;
+}
+.d1{
+    font-size: 25px; 
+    font-style: italic;
+    position: absolute;
+    z-index: 10;
+    font-weight:bold;
+    top: 90%;
+    right: 5%;
+}
+.d1 a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+	width: 5px;
+    padding-right: 3px;
+}
+::-webkit-scrollbar-track{
+	border: 2px #694e03;
+}
+::-webkit-scrollbar-thumb{
+	background: #694e03;
+	border-radius: 100px;
+}
+.verh{
+    margin: auto;
+    background: rgba(238, 216, 191, 0.6); 
+}
+#div1{
+    width: 650px;
+    height: 200px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Nexa Script Light;
+    margin-top: 260px;
+    padding-bottom: 0px;
+    padding-top: 70px;
+}
+.vudil1{
+    background: rgba(90, 56, 19, 0.287);
+    border: 10px double rgb(9, 26, 5);
+    outline: 8px double rgb(9, 26, 5);
+    color: burlywood;
+}
+#div2{
+    width: 650px;
+    height: 350px;
+    text-align: center;
+    margin-top: 260px;
+}
+#b1, #b2{
+    font-size: 35px;
+    font-family: Nexa Script Light;
+    height: 80px;
+    width: 500px;
+    border-radius: 50px;
+    background: rgba(238, 216, 191, 0.5);  
+}
+#b1{
+    margin-top: 50px;
+}
+#h2{
+    width: 280px;
+    height: 20px;
+    background: rgba(238, 216, 191, 0.4); 
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+#div3{
+    height: 100%;
+    width: 650px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Nexa Script Light;
+}
+#show_foto{
+    display: block;
+    padding-top: 20px;
+}
+#image{
+    width: 420px;
+    border: 6.5px double rgb(9, 26, 5);
+}
+.inf{
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#div4{
+    height: 400px;
+    width: 650px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Nexa Script Light;
+    margin-top: 200px;
+    padding-top: 50px;
+}
+#vidp, #perev{
+    height: 35px;  
+}
+#perev{
+    font-size: 20px;
+    font-family: Nexa Script Light;
+    width: 150px;
+    border-radius: 50px;
+    background: rgba(238, 216, 191, 0.7); 
+}
+#vidp{
+    background: rgba(238, 216, 191, 0.7); 
+    width: 250px;
+    text-align: center;
+    font-size: 17px;
+}

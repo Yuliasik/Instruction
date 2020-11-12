@@ -1,0 +1,89 @@
+body{
+    height: 100%;
+    background-image: url(../flovers1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.perel{
+    font-size: 25px; 
+    font-style: italic;
+    margin-top: 40;
+    margin-left: 5%; 
+    
+}
+h2{
+    text-align: left;
+}
+li{
+    margin-top: 10px;
+    font-weight:bold;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color:black;
+}
+.d1{
+    font-size: 25px; 
+    font-style: italic;
+    position: absolute;
+    z-index: 10;
+    font-weight:bold;
+    top: 90%;
+    right: 5%;
+}
+.d1 a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+	width: 5px;
+    padding-right: 3px;
+}
+::-webkit-scrollbar-track{
+	border: 2px #694e03;
+}
+::-webkit-scrollbar-thumb{
+	background: #694e03;
+	border-radius: 100px;
+}
+.verh{
+    margin: auto;
+    background: rgba(238, 216, 191, 0.6); 
+}
+#div1{
+    margin-top: 260px;
+    width: 490px;
+    height: 160px;
+    padding: 60px;
+    text-align: center;
+    font-size: 22px;
+}
+#hide_text{
+    padding-top: 18px;
+}
+#div2{
+    height: 100%;
+    overflow-x: auto;
+    width: 490px;
+    /* padding: 60px; */
+    text-align: center;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.opus{
+    font-size: 17px;
+}
+img{
+    float: left;
+    width: 150px;
+}
+.vudil{
+    background:  rgba(80, 60, 37, 0.171) ;
+}
+.bez_vudil{
+    background:  none ;
+}
